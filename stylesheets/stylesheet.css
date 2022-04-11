@@ -9,12 +9,16 @@ header {
 }
 body {
   background-color: #191919;
+  font-size: 20px;
 }
 .navi {
   padding: 5px;
-  margin: 25px;
-  color: #e8fbe8;
+  margin: 4px;
+  border: 2px, solid, black;
+  background-color: #30ac14;
+  color: #191919;
+  text-decoration: none;
 }
-
 .navi li {
+  display: inline-block;
 }
