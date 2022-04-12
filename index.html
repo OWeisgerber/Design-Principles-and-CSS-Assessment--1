@@ -3,7 +3,7 @@
     Course: Web Development 20S
     Teacher: Scott Hardman
     School: Pembina Trails Early College
-    Date Last Modified: April 11, 2022
+    Date Last Modified: April 12, 2022
 -->
 
 <!DOCTYPE html>
@@ -14,12 +14,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="stylesheets/stylesheet.css" />
     <title>Xbox</title>
-    <style></style>
+    <style>
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    </style>
   </head>
 
   <body>
     <header>
       <img
+        alt="image of the xbox logo"
         id="logo"
         class="center"
         src="images/black xbox logo.png"
@@ -38,19 +44,40 @@
     <main>
       <div class="products" style="margin-left: 150px">
         <a href="alt-page.html">
-          <img height="500px" width="500px" src="images/xbox series x.jpg" />
+          <img
+            alt="Image of an Xbox Series X. Click to be redirected to product page"
+            height="500px"
+            width="500px"
+            src="images/xbox series x.jpg"
+          />
+          <h2>XBOX SERIES X</h2>
         </a>
-        <h2>XBOX SERIES X</h2>
       </div>
 
       <div class="products" style="margin-right: 150px; float: right">
         <a href="alt-page.html">
-          <img height="500px" width="500px" src="images/xbox series s.jpg" />
+          <img
+            alt="Image of an Xbox Series S. Click to be redirected to product page."
+            height="500px"
+            width="500px"
+            src="images/xbox series s.jpg"
+          />
+          <h2>XBOX SERIES S</h2>
         </a>
-        <h2>XBOX SERIES S</h2>
       </div>
 
-      <div></div>
+      <div class="products">
+        <a href="alt-page.html">
+          <img
+            alt="Image of games available on Xbox Game Pass. Click to be redirected to product page."
+            height="400px"
+            width="750px"
+            src="images/game pass.jpg"
+          />
+          <h2>Xbox Game Pass</h2>
+        </a>
+      </div>
     </main>
+    <footer></footer>
   </body>
 </html>
