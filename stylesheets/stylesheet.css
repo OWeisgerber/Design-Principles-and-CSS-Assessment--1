@@ -10,11 +10,14 @@ header {
 body {
   background-color: #191919;
   font-size: 20px;
+  font-family: sans-serif;
 }
 nav {
   padding: 5px;
   margin: 5px;
   background-color: #30ac14;
+  position: sticky;
+  top: 0%;
 }
 .navi {
   padding: 5px;
@@ -26,4 +29,10 @@ nav {
 }
 .navi li {
   display: inline-block;
+}
+.products {
+  margin: 25px;
+  padding: 5px;
+  display: inline-block;
+  background-color: #30ac14;
 }
