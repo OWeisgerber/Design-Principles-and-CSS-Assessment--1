@@ -12,6 +12,9 @@ body {
   font-size: 20px;
   font-family: sans-serif;
 }
+h2{
+  font-weight: bold;
+}
 nav {
   padding: 5px;
   margin: 5px;
@@ -29,6 +32,7 @@ nav {
 }
 .navi li {
   display: inline-block;
+  font-weight: bold;
 }
 .products {
   margin: 25px;
