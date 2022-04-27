@@ -10,7 +10,8 @@ header {
 body {
   background-color: #191919;
   font-size: 20px;
-  font-family: sans-serif;
+  line-height: 140%;
+  font-family: Tahoma, sans-serif;
 }
 h2{
   font-weight: bold;
@@ -40,4 +41,7 @@ nav {
   display: inline-block;
   background-color: #30ac14;
   text-align: center;
+}
+.products p{
+  display: inline;
 }
