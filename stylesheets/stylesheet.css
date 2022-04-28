@@ -16,6 +16,12 @@ body {
 h2{
   font-weight: bold;
 }
+p{
+  margin-bottom: 100px;
+}
+.img-text{
+  padding-bottom: 50px;
+}
 nav {
   padding: 5px;
   margin: 5px;
