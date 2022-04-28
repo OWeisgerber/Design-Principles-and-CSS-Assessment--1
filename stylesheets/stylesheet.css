@@ -16,12 +16,6 @@ body {
 h2{
   font-weight: bold;
 }
-p{
-  margin-bottom: 100px;
-}
-.img-text{
-  padding-bottom: 50px;
-}
 nav {
   padding: 5px;
   margin: 5px;
@@ -42,12 +36,21 @@ nav {
   font-weight: bold;
 }
 .products {
+  display: flex;
+  justify-content: space-around;
+  
+
   margin: 25px;
   padding: 5px;
-  display: inline-block;
-  background-color: #30ac14;
+  background-color: #59bc42;
   text-align: center;
 }
-.products p{
-  display: inline;
+
+.products p {
+  margin-left: 30px;
+  flex: 10;
+}
+
+.products img {
+  flex: 1;
 }
