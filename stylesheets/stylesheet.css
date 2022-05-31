@@ -27,7 +27,6 @@ nav {
 .navi {
   padding: 10px;
   margin: 4px;
-  border: 100px, solid, black;
   background-color: #59bc42;
   color: #191919;
   text-decoration: none;
@@ -35,6 +34,10 @@ nav {
 .navi li {
   display: inline-block;
   font-weight: bold;
+}
+.navi :hover{
+  background-color: #191919;
+  color: #59bc42;
 }
 .products {
   margin: 25px;
