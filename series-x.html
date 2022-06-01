@@ -11,13 +11,35 @@
         text-decoration: none;
         color: black;
       }
+      header{
+      }
       .paragraph_x {
         background-color: #59bc42;
         display: block;
         width: 75%;
         margin: 0 auto;
         text-align: center;
-        font-weight: bold;
+      }
+      header {
+        animation: shrink 1s ease-in 0.5s forwards;
+        -o-animation: shrink 1s ease-in 0.5s forwards;
+        -webkit-animation: shrink 1s ease-in 0.5s forwards;
+        -moz-animation: shrink 1s ease-in 0.5s forwards;
+        z-index: 100;
+      }
+      body{
+        animation: fade-in 1s ease-in 1s forwards;
+        -o-animation: fade-in 1s ease-in 1s forwards;
+        -webkit-animation: fade-in 1s ease-in 1s forwards;
+        -moz-animation: fade-in 1s ease-in 1s forwards;
+      }
+      @keyframes shrink{
+        from{
+          transform: scale(10) translateY(50%);
+        }
+        to{
+          transform: scale(1) translateY(0);
+        }
       }
     </style>
   </head>
@@ -31,6 +53,7 @@
         src="images/black xbox logo.png"
         height="75px"
         width="75px"
+        style="background-color:#30ac14 ;"
       />
     </header>
 
@@ -56,6 +79,7 @@
           background-color: #59bc42;
         "
       />
+      <!-- Paragraph describing Series X -->
       <div
         class="paragraph_x"
       >
