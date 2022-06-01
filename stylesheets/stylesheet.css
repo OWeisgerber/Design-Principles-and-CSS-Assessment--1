@@ -1,12 +1,17 @@
 header {
   background-color: #30ac14;
   padding: 10px;
+
+  animation: shrink 1s ease-in 0s forwards;
+  -o-animation: shrink 1s ease-in 0s forwards;
+  -webkit-animation: shrink 1s ease-in 0s forwards;
+  -moz-animation: shrink 1s ease-in 0s forwards;
 }
 .center {
   margin-left: auto;
   margin-right: auto;
   display: block;
-  text-align:center
+  text-align: center;
 }
 body {
   background-color: #191919;
@@ -14,7 +19,7 @@ body {
   line-height: 140%;
   font-family: Tahoma, sans-serif;
 }
-h2{
+h2 {
   font-weight: bold;
 }
 nav {
@@ -24,6 +29,13 @@ nav {
   position: sticky;
   top: 0%;
   z-index: 1;
+
+  opacity: 0;
+
+  animation: fade-in 0.5s ease-in 1s forwards;
+  -o-animation: fade-in 0.5s ease-in 1s forwards;
+  -webkit-animation: fade-in 0.5s ease-in 1s forwards;
+  -moz-animation: fade-in 0.5s ease-in 1s forwards;
 }
 .navi {
   padding: 10px;
@@ -36,7 +48,7 @@ nav {
   display: inline-block;
   font-weight: bold;
 }
-.navi:hover{
+.navi:hover {
   background-color: #191919;
   color: #59bc42;
 }
@@ -46,4 +58,28 @@ nav {
   background-color: #59bc42;
   text-align: center;
   display: inline-block;
+}
+main {
+  opacity: 0;
+  animation: fade-in 0.5s ease-in 1s forwards;
+  -o-animation: fade-in 0.5s ease-in 1s forwards;
+  -webkit-animation: fade-in 0.5s ease-in 1s forwards;
+  -moz-animation: fade-in 0.5s ease-in 1s forwards;
+}
+
+@keyframes shrink{
+  from{
+    transform: scale(10) translateY(45%);
+  }
+  to{
+    transform: scale(1) translateY(0);
+  }
+}
+@keyframes fade-in{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
 }

@@ -11,8 +11,6 @@
         text-decoration: none;
         color: black;
       }
-      header{
-      }
       .paragraph_x {
         background-color: #59bc42;
         display: block;
@@ -20,25 +18,20 @@
         margin: 0 auto;
         text-align: center;
       }
-      header {
-        animation: shrink 1s ease-in 0.5s forwards;
-        -o-animation: shrink 1s ease-in 0.5s forwards;
-        -webkit-animation: shrink 1s ease-in 0.5s forwards;
-        -moz-animation: shrink 1s ease-in 0.5s forwards;
-        z-index: 100;
-      }
-      body{
-        animation: fade-in 1s ease-in 1s forwards;
-        -o-animation: fade-in 1s ease-in 1s forwards;
-        -webkit-animation: fade-in 1s ease-in 1s forwards;
-        -moz-animation: fade-in 1s ease-in 1s forwards;
-      }
       @keyframes shrink{
         from{
-          transform: scale(10) translateY(50%);
+          transform: scale(10) translateY(45%);
         }
         to{
           transform: scale(1) translateY(0);
+        }
+      }
+      @keyframes fade-in{
+        from{
+          opacity: 0;
+        }
+        to{
+          opacity: 1;
         }
       }
     </style>
@@ -58,7 +51,7 @@
     </header>
 
     <!-- nav menu -->
-    <nav>
+    <nav style="opacity: 0;">
       <ul>
         <a class="navi" href="index.html"><li>XBOX</li></a>
         <a class="navi" href="game-pass.html"><li>GAME PASS</li></a>
@@ -66,7 +59,7 @@
         <a class="navi" href="alt-page.html"><li>XBOX SERIES S</li></a>
       </ul>
     </nav>
-    <main>
+    <main style="opacity:0;">
       <!-- image of  the xbox series X, with description of the console underneath -->
       <img
         class="center"
